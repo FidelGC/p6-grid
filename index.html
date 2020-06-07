@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>grid_moma</title>
+    <style type="text/css">
+         <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700,900&display=swap" rel="stylesheet">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(22deg, mediumpurple, blue);
+            font-size: 16px;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        .container {
+            grid-template-columns: repeat(5, 1fr);
+            display: grid;
+            padding: 2em;
+            grid-auto-rows: 250px;
+        }
+        img{
+            width: 100%;
+        }
+
+        .element {
+            background: white;
+        }
+
+        .ele1,
+        .ele4,
+        .ele5 {
+            padding: 1.5em 1.1em;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ele1 {
+            grid-column: 2 span;
+            background: #00AFD7;
+
+        }
+
+        .ele2 {
+            grid-column: 3 span;
+
+        }
+
+        .ele3 {
+            grid-column: 3 span;
+        }
+
+        .ele4 {
+            grid-column: 2 span;
+            background: #FFCD00;
+        }
+
+        .ele5 {
+            grid-column: 2 span;
+            background: #EEEEEE;
+        }
+
+        .ele6 {
+            grid-column: 3 span;
+        }
+
+        .ele2 img,
+        .ele3 img,
+        .ele6 img {
+            object-fit: cover;
+            height: 100%;
+        }
+
+        h3 {
+            flex-grow: 1;
+            font-size: 1.7em;
+        }
+
+        h4 {
+            font-size: 0.9em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="element ele1">
+            <h3>Movie Drome</h3>
+            <h4>Van Der Beek<span>1963-1965</span></h4>
+        </div>
+        <div class="element ele2">
+            <img src="img/746px-VanDerBeek_Stan_c1963-65_Movie-Drome.jpg">
+        </div>
+        <div class="element ele3">
+            <img src="img/800px-Morisot_Berthe_1874_Boats_under_Construction.jpg">
+        </div>
+        <div class="element ele4">
+            <h3>Boats under construction</h3>
+            <h4>Morisot Berthe<span>1874</span></h4>
+        </div>
+        <div class="element ele5">
+            <h3>Projection Enclave<span>2018</span></h3>
+            <h4>Toyin Ojih Odutola</h4>
+        </div>
+        <div class="element ele6">
+            <img src="img/592ec82c1fffcb2e37ca38a6343ec4e7.jpg">
+        </div>
+    </div>
+
+</body>
+
+</html>
